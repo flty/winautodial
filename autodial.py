@@ -9,7 +9,7 @@ reload(sys)
 sys.setdefaultencoding('utf-8') 
 # os.path.dirname(__file__)
 
-class autodial(object):
+class AutoDial(object):
 	def __init__(self, user, password, num = 10, pbk = 'autodial.pbk'):
 		self._user = user
 		self._password = password
@@ -46,7 +46,7 @@ class autodial(object):
 
 if __name__ == '__main__':
 
-	ad = autodial('user', '1234')
+	ad = AutoDial('user', '1234')
 	ad.connect()
 
 	print('OK, please enjoy you internet surfing......')
